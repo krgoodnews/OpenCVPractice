@@ -13,6 +13,12 @@
 		22C6EAC22773409F0027E8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EAC02773409F0027E8EC /* Main.storyboard */; };
 		22C6EAC4277340A30027E8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EAC3277340A30027E8EC /* Assets.xcassets */; };
 		22C6EAC7277340A30027E8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EAC5277340A30027E8EC /* LaunchScreen.storyboard */; };
+		22C6EAD0277342B90027E8EC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C6EACF277342B90027E8EC /* opencv2.framework */; };
+		22C6EAD4277342E50027E8EC /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22C6EAD3277342E50027E8EC /* CVWrapper.mm */; };
+		22C6EAD7277350220027E8EC /* lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EAD6277350220027E8EC /* lenna.png */; };
+		22C6EAD92773513B0027E8EC /* Zufql.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EAD82773513B0027E8EC /* Zufql.png */; };
+		22C6EADD27735E400027E8EC /* question0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EADB27735E3F0027E8EC /* question0.jpeg */; };
+		22C6EADE27735E400027E8EC /* question1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 22C6EADC27735E400027E8EC /* question1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,15 @@
 		22C6EAC3277340A30027E8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C6EAC6277340A30027E8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22C6EAC8277340A30027E8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C6EACF277342B90027E8EC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = OpenCVPractice/opencv2.framework; sourceTree = "<group>"; };
+		22C6EAD1277342E50027E8EC /* OpenCVPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVPractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		22C6EAD2277342E50027E8EC /* CVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
+		22C6EAD3277342E50027E8EC /* CVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		22C6EAD52773430A0027E8EC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		22C6EAD6277350220027E8EC /* lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lenna.png; sourceTree = "<group>"; };
+		22C6EAD82773513B0027E8EC /* Zufql.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zufql.png; sourceTree = "<group>"; };
+		22C6EADB27735E3F0027E8EC /* question0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = question0.jpeg; sourceTree = "<group>"; };
+		22C6EADC27735E400027E8EC /* question1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = question1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C6EAD0277342B90027E8EC /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +58,7 @@
 			children = (
 				22C6EAB92773409F0027E8EC /* OpenCVPractice */,
 				22C6EAB82773409F0027E8EC /* Products */,
+				22C6EACE277342B90027E8EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,37 @@
 			children = (
 				22C6EABA2773409F0027E8EC /* AppDelegate.swift */,
 				22C6EABC2773409F0027E8EC /* SceneDelegate.swift */,
+				22C6EADA2773513E0027E8EC /* TestImage */,
 				22C6EABE2773409F0027E8EC /* ViewController.swift */,
 				22C6EAC02773409F0027E8EC /* Main.storyboard */,
 				22C6EAC3277340A30027E8EC /* Assets.xcassets */,
 				22C6EAC5277340A30027E8EC /* LaunchScreen.storyboard */,
 				22C6EAC8277340A30027E8EC /* Info.plist */,
+				22C6EAD2277342E50027E8EC /* CVWrapper.h */,
+				22C6EAD3277342E50027E8EC /* CVWrapper.mm */,
+				22C6EAD52773430A0027E8EC /* PrefixHeader.pch */,
+				22C6EAD1277342E50027E8EC /* OpenCVPractice-Bridging-Header.h */,
 			);
 			path = OpenCVPractice;
+			sourceTree = "<group>";
+		};
+		22C6EACE277342B90027E8EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22C6EACF277342B90027E8EC /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22C6EADA2773513E0027E8EC /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				22C6EADB27735E3F0027E8EC /* question0.jpeg */,
+				22C6EADC27735E400027E8EC /* question1.jpeg */,
+				22C6EAD82773513B0027E8EC /* Zufql.png */,
+				22C6EAD6277350220027E8EC /* lenna.png */,
+			);
+			path = TestImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +140,7 @@
 				TargetAttributes = {
 					22C6EAB62773409F0027E8EC = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -126,7 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C6EAC7277340A30027E8EC /* LaunchScreen.storyboard in Resources */,
+				22C6EADE27735E400027E8EC /* question1.jpeg in Resources */,
 				22C6EAC4277340A30027E8EC /* Assets.xcassets in Resources */,
+				22C6EADD27735E400027E8EC /* question0.jpeg in Resources */,
+				22C6EAD7277350220027E8EC /* lenna.png in Resources */,
+				22C6EAD92773513B0027E8EC /* Zufql.png in Resources */,
 				22C6EAC22773409F0027E8EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C6EAD4277342E50027E8EC /* CVWrapper.mm in Sources */,
 				22C6EABF2773409F0027E8EC /* ViewController.swift in Sources */,
 				22C6EABB2773409F0027E8EC /* AppDelegate.swift in Sources */,
 				22C6EABD2773409F0027E8EC /* SceneDelegate.swift in Sources */,
@@ -287,9 +334,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 827YX997NH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVPractice",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCVPractice/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenCVPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,6 +358,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krgoodnews.OpenCVPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVPractice/OpenCVPractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,9 +370,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 827YX997NH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVPractice",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCVPractice/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenCVPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krgoodnews.OpenCVPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVPractice/OpenCVPractice-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
